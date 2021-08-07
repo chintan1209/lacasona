@@ -1,0 +1,211 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Feedback</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 20px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+
+body{
+    padding: 6px;
+}
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 0px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .line {
+            padding-top: 15px;
+            border-top-width: 1px;
+            width: auto;
+            border-top-style: solid;
+            font-weight: 300;
+            font-size: 24px;
+            color: rgb(65, 65, 65);
+            letter-spacing: 0.6px;
+            margin-bottom: 6px;
+        }
+
+        #h {
+            margin: 0px;
+            padding-bottom: 2.5px;
+            font-weight: 400;
+            letter-spacing: 0.6px;
+            color: #71653F;
+            margin-top: 8px;
+            font-size: 26px;
+        }
+
+        h4 {
+            margin: 0%;
+            padding-bottom: 5px;
+        }
+
+        #o {
+            padding-left: 25px;
+            padding-right: 25px;
+            color: #689F38;
+            font-weight: 300;
+        }
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            line-height: 0.1em;
+            margin: 25px 0 20px;
+        }
+
+        h2 span {
+            background: #fff;
+            padding: 0 10px;
+        }
+
+
+        a {
+            color: green;
+            text-decoration: none;
+        }
+
+        .ad {
+            width: 230px;
+            padding-top: -5px;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+        }
+
+        h4 {
+            padding-bottom: 0px;
+            font-size: 20px;
+            font-weight: 300;
+
+
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+
+        }
+
+
+        #container {
+            display: none;
+            background-color: #f2da8c;
+            text-align: center;
+            color: white;
+            position: relative;
+            padding: 1px 8px 8px;
+            box-sizing: border-box;
+            box-shadow: 5px 10px 8px 10px #f2da8c;
+
+            /* margin-left: 15px;
+            margin-right: 15px;  */
+            position: fixed;
+            width: 73%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* width: 50%; */
+        }
+
+        #container button {
+            background-color: #8d6d05;
+            display: inline-block;
+            border-radius: 5px;
+            border: 2px solid #8d6d05;
+            padding: 5px;
+            text-align: center;
+            width: 60px;
+            margin-bottom: 0px;
+            margin-top: 10px;
+            letter-spacing: 1px;
+            color: white;
+        }
+
+        input::-webkit-input-placeholder {
+            font-size: 16px;
+            line-height: 10;
+        }
+
+
+        #container .message {
+            text-align: center;
+            color: black;
+            padding: 10px 0px;
+            letter-spacing: 1px;
+
+        }
+
+        #phonenumberid {
+            font-size: 17px;
+            font-weight: 400;
+            color: rgb(88, 88, 88);
+        }
+
+        .m#blur.active {
+            /* filter: blur(3px); */
+            opacity: .3;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        #g {
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        #centerprogresbar {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+        
+        #ratingid {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.8px;
+            color: #689F38;
+        }
+
+        #mySelect {
+            font-size: 17px;
+            background-color: #689F38;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+    
+    <div id="feedbackwrapper"><div class="m" id="blur"><h1 id="h">La Casona</h1><h4 id="phonenumberid">9925540403</h4><div class="ad"> <p>778, Makwana Rd, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059</p></div></div><h1 class="line">Give feedback</h1>    <form action="https://formsubmit.co/chintanfruitwala@gmail.com" method="POST">  <input type="text" name="enter name" placeholder="Enter name" required="" id="name"><br>  <input type="text" name="comment" placeholder="Enter comment" required="" id="comment"><input type="hidden" name="_captcha" value="false"> <input type="hidden" name="_next" value="https://lacasonarestaurantmenu.netlify.app/"> <br><br>   <input type="submit" value="DONE" id="mySelect" onclick="testVariable()"> </form> <h2><span id="o">OR</span></h2><h3 id="g"> <a id="ratingid" href="#" >Give google rating</a> </h3></div>
+
+    
+
+    
+
+
+</body></html>
